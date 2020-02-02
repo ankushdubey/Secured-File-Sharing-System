@@ -21,7 +21,7 @@ requiredCPUSpeedInMHz=1000     # 1 GHz
     # 3) Bash script can only do integer arithmetic. Include additional handling needed to strip the decimal part
     # 4) Execute the script before submission and confirm the output 
 
-cpuSpeedInMHz=`cat /proc/cpuinfo | awk 'NR==8 {print $4}'| awk -F "." '{print $1}'`
+cpuSpeedInMHz=`cat /proc/cpuinfo | awk '{if($2=="MHz") print $4}'|awk 'NR==1'|awk -F "." '{print $1}'`
 
 if test $cpuSpeedInMHz -ge $requiredCPUSpeedInMHz
    then
