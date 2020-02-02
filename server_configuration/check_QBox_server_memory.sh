@@ -19,7 +19,7 @@ requiredMemInKB=2000000        # 2 GB RAM, ideally it can be 2097152 KB
     #    E.g. totalMemInKB=`<bash command>`
     # 3) Start the expression to populate the variable with "cat $1" which is the command line filename input. Check the Usage above. 
     # 4) Execute the script before submission and confirm the output
-totalMemInKB=`cat /proc/meminfo | grep "MemFree" | awk '{print $2}'`
+totalMemInKB=`cat /proc/meminfo | grep "MemTotal" | awk '{print $2}'`
 
 if test $totalMemInKB -ge $requiredMemInKB
    then
