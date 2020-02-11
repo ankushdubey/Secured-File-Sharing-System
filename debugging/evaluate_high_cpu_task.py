@@ -3,8 +3,8 @@
 
 import sys
 import subprocess
-  
 
+def confirm_high_cpu_usage_versions():
 # USER DOES NOT HAVE TO EDIT THIS FILE
 
 if __name__ == '__main__': 
