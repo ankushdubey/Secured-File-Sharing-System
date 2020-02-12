@@ -1,0 +1,12 @@
+Network layer
+no
+yes
+Reply from 3.6.178.193: bytes=32 time=56ms TTL=52
+Reply from 3.6.178.193: bytes=32 time=50ms TTL=52
+Reply from 3.6.178.193: bytes=32 time=50ms TTL=52
+Reply from 3.6.178.193: bytes=32 time=50ms TTL=52
+
+Ping statistics for 3.6.178.193:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 50ms, Maximum = 56ms, Average = 51ms
